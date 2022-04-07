@@ -24,6 +24,8 @@ body {
     margin: 0
 }
 
+
+
 article,
 aside,
 details,
@@ -5578,4 +5580,9 @@ button.close {
     .hidden-print {
         display: none !important
     }
+}
+
+.skill-ul{
+    display: inline-grid;
+    margin-right: 15px;
 }
