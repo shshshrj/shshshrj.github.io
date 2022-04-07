@@ -5586,3 +5586,10 @@ button.close {
     display: inline-grid;
     margin-right: 15px;
 }
+
+.contact-info-p{
+    color: #4F4F4F;
+    font-size: 18px;
+    display: block;
+    padding: 50px 0;
+}
