@@ -3192,3 +3192,10 @@ p.copyright {
     visibility: hidden;
   }
 }
+
+.contact-info-p{
+  color: #4F4F4F;
+  font-size: 18px;
+  display: block;
+  padding: 50px 0;
+}
