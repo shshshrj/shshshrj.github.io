@@ -5660,8 +5660,8 @@ a.btn-layerClose:hover {
 }
 
 
-#slideShow {
-    width: 500px;
+#pop-container {
+    width: 700px;
     height: 300px;
     position: relative;
     margin: 50px auto;
