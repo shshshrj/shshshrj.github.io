@@ -2,17 +2,17 @@ $('.slider-1 > .page-btns > div').click(function(){
     var $this = $(this);
     var index = $this.index();
     
-    $this.addClass('active');
-    $this.siblings('.active').removeClass('active');
+    $this.addClass('pop-container');
+    $this.siblings('.pop-container').removeClass('pop-container');
     
     var $slider = $this.parent().parent();
     
-    var $current = $slider.find(' > .slides > div.active');
+    var $current = $slider.find(' > .slides > div.pop-container');
     
     var $post = $slider.find(' > .slides > div').eq(index);
     
-    $current.removeClass('active');
-    $post.addClass('active');
+    $current.removeClass('pop-container');
+    $post.addClass('pop-container');
 });
 
 // 좌/우 버튼 추가 슬라이더
@@ -23,7 +23,7 @@ $('.slider-1 > .side-btns > div').click(function(){
     var index = $this.index();
     var isLeft = index == 0;
     
-    var $current = $slider.find(' > .page-btns > div.active');
+    var $current = $slider.find(' > .page-btns > div.pop-container');
     var $post;
     
     if ( isLeft ){
