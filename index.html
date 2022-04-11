@@ -65,7 +65,9 @@
               <div class="pop-conts">
                 <!-- img-->
                 <h2>메인화면</h2>
-                <img src="assets/images/app/pro/main.PNG" alt="">
+                <div class="div-img-pop">
+                  <img src="assets/images/app/pro/main.PNG" alt="">
+                </div>
                 <p>이 웹사이트를 이용해 헌혈한 혈액의 총보유량 출력 및 이벤트 이미지 슬라이싱</p>
               </div>
             </li>
@@ -73,8 +75,74 @@
               <div class="pop-conts">
                 <!-- img-->
                 <h2>개발환경</h2>
-                <img src="assets/images/app/pro/tools.PNG" alt="">
-                <p>이 웹사이트를 이용해 헌혈한 혈액의 총보유량 출력 및 이벤트 이미지 슬라이싱</p>
+                <div class="div-img-pop" >
+                  <img src="assets/images/app/pro/tools.PNG" alt="">
+                </div>
+                <p>tomcat을 이용해 서버를 구축하고 헌혈의 집 정보는 공공데이터 포털의 api를 json데이터로 활용
+                  헌혈의 집 위치는 kakao developer의 map api를 통해 표시</p>
+              </div>
+            </li>
+            <li>
+              <div class="pop-conts">
+                <!-- img-->
+                <h2>예약페이지</h2>
+                <div class="div-img-pop" style="text-align: center;">
+                  <img src="assets/images/app/pro/resmap.PNG" alt="" height="300px">
+                </div>
+                <p>각 헌혈의 집 정보는 api를 json데이터로 활용
+                  헌혈의 집 정보를 페이징 및 헌혈의 집 이름 클릭시 지도에 표시
+                  이 페이지에 들어올시 지도에 현재 위치와 각 현혈의 집 위치 pin으로 표시</p>
+              </div>
+            </li>
+            <li>
+              <div class="pop-conts">
+                <!-- img-->
+                <h2>헌혈의 집 검색</h2>
+                <div class="div-img-pop">
+                  <img src="assets/images/app/pro/search.PNG" alt="">
+                </div>
+                <p>원하는 헌혈의 집 조건을 선택 후 검색창에 검색</p>
+              </div>
+            </li>
+            <li>
+              <div class="pop-conts">
+                <!-- img-->
+                <h2>map 표시</h2>
+                <div class="div-img-pop">
+                  <img src="assets/images/app/pro/pin.PNG" alt="" >
+                </div>
+                <p>앞쪽의 헌혈의 집 리스트에서 원하는 지점 이름 클릭시 지도에 표시하고 예약버튼 클릭시 예약 내용 입력 페이지로 이동</p>
+              </div>
+            </li>
+            <li>
+              <div class="pop-conts">
+                <!-- img-->
+                <h2>예약내용 입력 페이지</h2>
+                <div class="div-img-pop">
+                  <img src="assets/images/app/pro/resinfo2.PNG" alt="" style="height: 300px;">
+                </div>
+                <p>선택한 헌혈의 집 정보와 사용자의 정보는 입력되어 있고 원하는 날짜 지정 (당일예약불가) // 각 입력내용 유효성검사</p>
+              </div>
+            </li>
+            <li>
+              <div class="pop-conts">
+                <!-- img-->
+                <h2>회원가입 시 주소 api</h2>
+                <div class="div-img-pop">
+                  <img src="assets/images/app/pro/addr.PNG" alt="">
+                </div>
+                <p>회원가입 시 주소 api daum 우편번호 서비스 api 이용</p>
+              </div>
+            </li>
+            <li>
+              <div class="pop-conts">
+                <!-- img-->
+                <h2>chart.js</h2>
+                <div class="div-img-pop">
+                  <img src="assets/images/app/pro/empmain.PNG" alt="" style="height: 300px;">
+                </div>
+                <p>chart.js 를 통해 원형 그래프 생성
+                  해당 헌혈의 집에서 보유중인 혈액량을 DB에서 가져와 출력</p>
               </div>
             </li>
           </ul>
@@ -378,65 +446,6 @@
               </div> <!-- End section_header -->
                 <p>tomcat을 이용해 서버를 구축하고 헌혈의 집 정보는 공공데이터 포털의 api를 json데이터로 활용<br>
                   헌혈의 집 위치는 kakao developer의 map api를 통해 표시
-                </p>
-            </div> <!-- End feature-content -->
-          </div> <!-- End row -->
-        </div> <!-- End container -->
-      </div> <!-- End feature-section -->
-    </section>
-    <!-- End Creative section-1 -->
-
-    <section>
-      <div class="sep-section"></div>
-    </section>
-    <section>
-      <div id="features-app-section-2" class="pad-sec">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 features-app-content-left animated out" data-animation="fadeInLeft" data-delay="0">
-              <div class="section_header">
-                <h2>예약페이지 </h2> 
-              </div> <!-- End section_header -->
-              <p>각 헌혈의 집 정보는 api를 json데이터로 활용<br>
-                헌혈의 집 정보를 페이징 및 헌혈의 집 이름 클릭시 지도에 표시<br>
-                이 페이지에 들어올시 지도에 현재 위치와 각 현혈의 집 위치 pin으로 표시<br>
-              </p>
-              <div class="view-more">
-                <a href="#contact-section" class="btn btn-lg btn-primary">view more</a>
-              </div>
-            </div> <!-- End feature-content -->
-            <div class="col-sm-5 col-sm-offset-1 text-center img-app-right animated out" data-animation="fadeInRight" data-delay="0">
-              <figure>
-                <img src="assets/images/app/pro/resmap.PNG" alt="">
-              </figure>
-            </div> <!-- End col-sm-8 -->
-          </div> <!-- End row -->
-        </div> <!-- End container -->
-      </div> <!-- End feature-section -->
-    </section>
-    <!-- End Features App 2 section -->
-
-    <section>
-      <div class="sep-section"></div>
-    </section>
-
-    <!-- Creative section-1
-    ================================================== -->
-    <section>
-      <div id="creative-section-1" class="pad-sec">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-7 img-creative-left text-center animated out" data-animation="fadeInLeft" data-delay="0">
-              <figure>
-                <img src="assets/images/app/pro/chart.PNG" alt="" style="width: 450px;">
-              </figure>
-            </div> <!-- End col-sm-8 -->
-            <div class="col-sm-5 creative-content-right animated out" data-animation="fadeInRight" data-delay="0">
-              <div class="section_header">
-                <h2>혈액보유량 chart</h2> 
-              </div> <!-- End section_header -->
-                <p>chart.js 를 통해 원형 그래프 생성<br>
-                  해당 헌혈의 집에서 보유중인 혈액량을 DB에서 가져와 출력
                 </p>
             </div> <!-- End feature-content -->
           </div> <!-- End row -->

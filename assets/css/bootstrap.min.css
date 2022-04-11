@@ -5598,7 +5598,6 @@ button.close {
 
 .pop-layer .btn-r {
   width: 100%;
-  margin: 10px 0 20px;
   padding-top: 10px;
   border-top: 1px solid #DDD;
   text-align: right;
@@ -5610,7 +5609,7 @@ button.close {
   top: 50%;
   left: 50%;
   width: 800px;
-  height: auto;
+  height: 600px;
   background-color: #fff;
   border: 1px solid #3571B5;
   z-index: 10;
@@ -5660,9 +5659,20 @@ a.btn-layerClose:hover {
 }
 
 
-#pop-container {
-    width: 700px;
-    height: 300px;
+li{
+    list-style-type: none;
+}
+
+.pop-conts{
+    width: 500px;
+    height: 400px;
+}
+
+.pop-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 730px;
+    height: 500px;
     position: relative;
     margin: 50px auto;
     overflow: hidden;
@@ -5670,6 +5680,8 @@ a.btn-layerClose:hover {
 }
 
 .slides {
+    display: flex;
+    height: 400px;
     position: absolute;
     left: 0;
     top: 0;
@@ -5681,7 +5693,7 @@ a.btn-layerClose:hover {
 
 /* 첫 번째 슬라이드 가운데에 정렬하기위해 첫번째 슬라이드만 margin-left조정 */
 .slides li:first-child {
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 /* 슬라이드들 옆으로 정렬 */
@@ -5727,4 +5739,14 @@ a.btn-layerClose:hover {
 /* 다음 화살표에 마우스 커서가 올라가 있을때 이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
 .next:hover {
     transform: translateX(10px);
+}
+
+.div-img-pop {
+    width: 450px;
+    height: auto;
+}
+
+.pop-conts > p {
+    margin: 20px;
+    width: 400px;
 }
