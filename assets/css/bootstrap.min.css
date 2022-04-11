@@ -5682,7 +5682,7 @@ a.btn-layerClose:hover {
     cursor:pointer;
 }
 
-.slider-1 > .page-btns > div.pop-container {
+.slider-1 > .page-btns > div.pop-layer {
     background-color:rgba(255,255,255,1);
 }
 
@@ -5701,7 +5701,7 @@ a.btn-layerClose:hover {
     background-repeat:no-repeat;
 }
 
-.slider-1 > .slides > div.active {
+.slider-1 > .slides > div.pop-layer {
     opacity:1;
 }
 

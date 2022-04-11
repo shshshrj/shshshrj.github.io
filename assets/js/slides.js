@@ -2,17 +2,17 @@ $('.slider-1 > .page-btns > div').click(function(){
     var $this = $(this);
     var index = $this.index();
     
-    $this.addClass('pop-container');
-    $this.siblings('.pop-container').removeClass('pop-container');
+    $this.addClass('pop-layer');
+    $this.siblings('.pop-layer').removeClass('pop-layer');
     
     var $slider = $this.parent().parent();
     
-    var $current = $slider.find(' > .slides > div.pop-container');
+    var $current = $slider.find(' > .slides > div.pop-layer');
     
     var $post = $slider.find(' > .slides > div').eq(index);
     
-    $current.removeClass('pop-container');
-    $post.addClass('pop-container');
+    $current.removeClass('pop-layer');
+    $post.addClass('pop-layer');
 });
 
 // 좌/우 버튼 추가 슬라이더
@@ -23,7 +23,7 @@ $('.slider-1 > .side-btns > div').click(function(){
     var index = $this.index();
     var isLeft = index == 0;
     
-    var $current = $slider.find(' > .page-btns > div.pop-container');
+    var $current = $slider.find(' > .page-btns > div.pop-layer');
     var $post;
     
     if ( isLeft ){
