@@ -1,4 +1,4 @@
-$('#bh-web-project').click(function(){
+$('#project-move').click(function(){
     var $href = $(this).attr('href');
     layer_popup($href);
 });

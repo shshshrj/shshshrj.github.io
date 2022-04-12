@@ -5659,7 +5659,7 @@ a.btn-layerClose:hover {
 }
 
 
-li{
+.slides > li{
     list-style-type: none;
 }
 
@@ -5682,7 +5682,8 @@ li{
 .slides {
     display: flex;
     height: 400px;
-    position: absolute;
+    position: a
+    solute;
     left: 0;
     top: 0;
     width: 2500px;
