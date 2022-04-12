@@ -1,6 +1,7 @@
 $('#bh-web-project').click(function(){
     var $href = $(this).attr('href');
     layer_popup($href);
+    console.log($href);
 });
     function layer_popup(el){
         var $el = $(el);    //레이어의 id를 $el 변수에 저장
