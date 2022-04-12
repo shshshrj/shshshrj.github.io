@@ -5659,8 +5659,12 @@ a.btn-layerClose:hover {
 }
 
 
-.slides > li{
+li{
     list-style-type: none;
+}
+
+.skill-ul > li{
+    list-style-type: disc !important;
 }
 
 .pop-conts{
@@ -5682,8 +5686,7 @@ a.btn-layerClose:hover {
 .slides {
     display: flex;
     height: 400px;
-    position: a
-    solute;
+    position: absolute;
     left: 0;
     top: 0;
     width: 2500px;
