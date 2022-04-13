@@ -197,7 +197,7 @@ $(document).ready(function($) {
             message: $('#message').val()
         },
             function(data){
-                document.getElementById('alert').innerHTML = data;
+                document.getElementById('alert').innerHTML = "전송 완료 되었습니다.";
                 $('#alert').slideDown('slow');
                 $('#contactform img.contactloader').fadeOut('slow',function(){$(this).remove();});
                 $('#submit').removeAttr('disabled');
