@@ -188,7 +188,6 @@ $(document).ready(function($) {
             $('#alert').hide();
 
         $('#submit')
-            .after('<img src="../images/ajax-loader.GIF" class="contactloader" />')
             .attr('disabled','disabled');
 
         $.post(action, {
@@ -197,11 +196,10 @@ $(document).ready(function($) {
             message: $('#message').val()
         },
             function(data){
-                document.getElementById('alert').innerHTML = "전송 완료 되었습니다.";
+                document.getElementById('alert').innerHTML = "메일이 전송되었습니다. \n감사합니다.";
                 $('#alert').slideDown('slow');
-                $('#contactform img.contactloader').fadeOut('slow',function(){$(this).remove();});
                 $('#submit').removeAttr('disabled');
-                if(data.match('success') !== null) {
+                if(String(data).match('success') == null) {
                     $('#name').val('');
                     $('#email').val('');
                     $('#message').val('');
